@@ -1,0 +1,53 @@
+
+
+.grid-container {
+    background-color: slategray;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto auto auto auto auto;
+    gap: 5px 2px;
+    grid-template-areas:
+    " topBar topBar topBar topBar ."
+      ". image image . ."
+      ". searchbox  searchbox . ."
+      ". buttons buttons . ."
+      "btmBar btmBar btmBar btmBar .";
+  }
+
+    .topBar{ grid-area: topBar;
+        background-color: tan;
+        text-align: center;
+        border-color: black;
+        border-style: dotted;
+        min-height: 10px;
+    }
+    
+    .image { grid-area: image; 
+            background-color: cyan;
+            text-align: center;
+            border-color: black;
+            border-style: dotted
+            
+    }
+    
+    .searchbox { grid-area: searchbox; 
+            background-color: magenta;
+            text-align: center;
+            border-color: black;
+            border-style: dotted
+    }
+    
+    .buttons { grid-area: buttons; 
+            background-color: yellow;
+            text-align: center;
+            border-color: black;
+            border-style: dotted
+            }
+    .btmBar{
+        grid-area: btmBar;
+        background-color:wheat;
+        text-align: center;
+        border-color: black;
+        border-style: dotted
+        }
+
