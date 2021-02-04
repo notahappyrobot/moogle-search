@@ -1,32 +1,75 @@
 
 #headerDiv{
     display: flex;
+    border: slategray;
+    border-style:solid;
 }
 #navBarLeft{
-    width: 50%;
-    text-align: left;
-    border: slategray;
-    border-style:solid;
-    padding-left: 20px;
+    display: flex;
+    justify-content: flex-start;
+    font-size: 75%;
+    width: 50%;  
+    padding-left: 10px;
 }
-#navBarRight{
+#navBarRight{   
+  position: relative;
+    font-size: 75%;
     width: 50%;
-    text-align: right;    
-    border: slategray;
-    border-style:solid;
-    padding-right: 20px;
+    padding-right: 5px;
+    background-color: coral;
+    
+}
+
+#navBarLinks{
+    position: absolute;
+    background-color: blue;
+    top:0;
+    right: 70px;   
+}
+#navBarApps{
+    position: absolute;
+    background-color: red;
+    top:0; 
+    right: 60px;  
+}
+#navBarSignIn{
+    position: absolute;
+    background-color: green;
+    top:0; 
+    right: 5px;  
+
 }
 
 #logoDiv{
-    text-align: center;
-
-    width: 100%;
-    border-style:solid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 100px;
 }
 
 #inputDiv{
     display: flex;
+    padding: 10px;
+    width: auto;    
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+#searchText{
+    min-width: fit-content;
+    text-align: center;
+
+    padding: 5px;
+
     
-    border: slategray;
-    border-style:solid;
+    
+}
+
+#searchBtns{
+  
+
+    padding: 5px;
+    text-align: center;
+    
 }
