@@ -1,40 +1,40 @@
 
 #headerDiv{
     display: flex;
-    border: slategray;
+/**    border: slategray;
     border-style:solid;
+**/
 }
 #navBarLeft{
-    display: flex;
+    position: relative;
     justify-content: flex-start;
     font-size: 75%;
     width: 50%;  
+ 
     padding-left: 10px;
 }
 #navBarRight{   
-  position: relative;
+    position: relative;
+    justify-content: flex-end;
     font-size: 75%;
     width: 50%;
     padding-right: 5px;
-    background-color: coral;
-    
 }
-
 #navBarLinks{
     position: absolute;
-    background-color: blue;
+
     top:0;
-    right: 70px;   
+    right: 100px;   
 }
 #navBarApps{
     position: absolute;
-    background-color: red;
+
     top:0; 
     right: 60px;  
 }
 #navBarSignIn{
     position: absolute;
-    background-color: green;
+
     top:0; 
     right: 5px;  
 
