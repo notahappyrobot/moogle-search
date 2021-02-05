@@ -1,17 +1,23 @@
 
+a{
+    font-family: monospace;
+    font-size: 15px;
+    color: slategray;
+}
+
 #headerDiv{
     display: flex;
 /**    border: slategray;
     border-style:solid;
 **/
+justify-content: space-between;
 }
 #navBarLeft{
     position: relative;
     justify-content: flex-start;
     font-size: 75%;
     width: 50%;  
- 
-    padding-left: 10px;
+     padding-left: 10px;
 }
 #navBarRight{   
     position: relative;
@@ -24,13 +30,13 @@
     position: absolute;
 
     top:0;
-    right: 100px;   
+    right: 120px;   
 }
 #navBarApps{
     position: absolute;
 
     top:0; 
-    right: 60px;  
+    right: 80px;  
 }
 #navBarSignIn{
     position: absolute;
@@ -76,3 +82,62 @@
     
 }
 
+#bottomDiv{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+#locationDiv{
+
+    font-family: monospace;
+    font-size: 15px;    
+
+    width: 100%;
+    display: inline-block;
+}
+
+
+
+#footerDiv{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+    font-size: 75%;
+}
+
+#footDiv1{
+    order: 0;
+    flex-grow: 2;
+    align-self: flex-end;
+
+}
+#footDiv2{
+    order: 0;
+    flex-grow: 3;
+    align-self: center;
+
+}
+#footDiv3{
+    order: 0;
+    flex-grow: 2;
+    align-self: flex-end;
+
+}
+
+@media(max-width: 500px) {
+    #footDiv2 {
+      flex: 0 0 100%;
+      order: 0;
+    }
+    #footDiv3{
+      flex: 0 0 100%;
+      order: 2;
+    }
+    #footDiv1{
+      flex: 0 0 100%;
+      order: 3;
+    }
+  }
